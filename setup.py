@@ -28,6 +28,7 @@ install_requirements = [
     "Jinja2>=2.8,<3",
     "colorama>=0.3.9",
     "packaging>=16.8,<17.0",
+    "requests>=2.25,<3",
     "six>=1.11.0,<2.0.0",
     "networkx>=2.4,<3"
 ]
@@ -59,6 +60,7 @@ setup(
         "sceptre.resolvers": [
             "environment_variable ="
             "sceptre.resolvers.environment_variable:EnvironmentVariable",
+            "file = sceptre.resolvers.file:File",
             "file_contents = sceptre.resolvers.file_contents:FileContents",
             "stack_output = sceptre.resolvers.stack_output:StackOutput",
             "stack_output_external ="
